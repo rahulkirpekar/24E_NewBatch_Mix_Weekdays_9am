@@ -1,0 +1,78 @@
+
+		A(testA(){...})
+		|
+	------------------
+	|		|
+	B		C
+      testA()	      testA()<---Override
+      testB()	      testC()
+
+	  
+	// Upcasting
+	A objA = new C();
+	
+	objA.testA();
+
+	obj = new B();
+
+	obj.testA();
+
+
+
+
+
+
+
+	upcasting
+	A objA = new B();
+	
+	downcasting
+	
+	B objB = (B)objA;
+
+
+
+
+
+
+
+				      Person(getBehave())
+				  	|
+	-------------------------------------------------------------------
+	|			|			|		|
+       Home		       Org		    PublicPlace	     School   
+	|			|			|		|
+  getMovieOnTime()         getSalary()             getPublicEvent()   getResult() 	
+		
+
+	|			|			|		|
+    getBehave()             getBehave()             getBehave()       getBehave()
+	|			|			|		|
+     Child                   Employee                 Citizen         Student
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -6,7 +6,6 @@ public interface Person
 	
 	public abstract void getBehave(); // public abstract 
 	
-	
 	// Person.testStatic();
 	static void testStatic()
 	{

@@ -15,9 +15,12 @@ public class TestApp1
 		int no2= sc.nextInt();
 		
 		int ans ;
+
 		
 		try 
 		{
+			
+			
 			ans  =  no1/ no2;
 			
 			String name = null;

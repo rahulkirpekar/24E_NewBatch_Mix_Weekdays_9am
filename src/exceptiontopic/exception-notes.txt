@@ -73,32 +73,21 @@ Exception - Abnormal Scenario
 
 
 
-	
-
-					 			
-
-
+*************************************************
+	Exception Handling with Method Overriding in Java
+	*************************************************
 
 
+1. If the superclass method does not declare an exception
 
+	subclass overridden method cannot declare the checked exception but it can declare unchecked exception.
 
+2. If the superclass method declares an exception
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		1. subclass overridden method can declare same, 
+		2. subclass exception or 
+		3. no exception 
+		4. but cannot declare parent exception.
 
 
 

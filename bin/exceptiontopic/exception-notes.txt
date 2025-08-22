@@ -1,0 +1,114 @@
+Exception - Abnormal Scenario
+----------
+
+	statement----1
+	statement----2
+	statement----3
+	statement----4
+	statement----5--raise exception--code crashed
+	statement----6
+	statement----7
+	statement----8
+	statement----9
+	statement----10
+
+
+	1.
+		10 / 0---ArithmeticException
+	-----------------------------------------------------------
+	2.
+		String name = null;	
+		SOP(name.length());// NullpointerException
+	-----------------------------------------------------------	
+	3.
+		int a[] = new int[5];//a[0]..a[4]
+		a[5] = 10;  // ArrayIndexoutofBoundException
+	-----------------------------------------------------------
+		//	       01234	
+	4.	String name = "royal";
+		SOP(name.charAt(5));// StringIndexoutofBoundException
+	-----------------------------------------------------------		
+	5.
+				A
+				|
+			-----------------
+			|		|
+			B		C
+
+		A objA = new B();
+		C objC = (C)objA;// ClassCastException
+		
+	-----------------------------------------------------------
+	6.
+		String value = "1a2";
+		int no = Integer.parseInt(vallue);// NumberFormateException
+	-----------------------------------------------------------	
+
+			Type of Exception
+			--------------------
+
+	1. Checked Exception		2. UnChecked Exception--dependent on memorya allocation
+	-----------------------		-----------------------
+	compileTime---Compiler		Runtime---JVM	
+
+
+				Hierarchy of Exception
+				-------------------------
+
+					Throwable
+					   |---------------------------------------------------------------|
+					Exception(recoverable)						Error(Irrecoverable)
+					   |
+		-------------------------------------------------------------------
+		|--checked exception						|--Unchecked--JVM
+---FileNotFoundException						RuntimeException
+---CLassNotFoundException							|
+---SQLException								-----ArithmeticException
+									-----NullpointerException
+									-----StringIndexoutofBoundException
+									-----ArrayIndexoutofBoundException
+									-----NumberFormateException
+									-----ClassCastException
+			
+
+
+
+*************************************************
+	Exception Handling with Method Overriding in Java
+	*************************************************
+
+
+1. If the superclass method does not declare an exception
+
+	subclass overridden method cannot declare the checked exception but it can declare unchecked exception.
+
+2. If the superclass method declares an exception
+
+		1. subclass overridden method can declare same, 
+		2. subclass exception or 
+		3. no exception 
+		4. but cannot declare parent exception.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+OutputStream(Write)
+InputStream(Read)
+-----------------------------------------------------------------------------
+Data:-
+-----
+	1. String			2. User Defined Objects
+-----------------------------------------------------------------------------
+
+File Data Write:-
+----------------
+
+	FileOutputStream(write)		FileWriter(write)
+	FileInputStream(read)		FileReader(read)
+		|				|
+	1. Byte oriented way		2. Character oriented way
+	----------------------		-------------------------
+	Data--To convert into Byte	Data---write---File
+
+	1. String			1. String	
+	2. User Defined Objects
+		
